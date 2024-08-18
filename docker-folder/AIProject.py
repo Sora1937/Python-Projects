@@ -60,7 +60,8 @@ y_test = np.array(test_batch[b'labels'])
 # Reshape the data 
 X_train = X_train.reshape(-1, 3, 32, 32).transpose(0, 2, 3, 1)
 #y_train = y_train.reshape(-1, 3, 32, 32).transpose(0, 2, 3, 1)
-print(y_train)
+
+
 # Split the dataset into training and validation sets
 X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2, random_state=42)
 
