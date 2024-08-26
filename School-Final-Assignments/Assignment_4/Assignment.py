@@ -16,7 +16,7 @@ y = df['sentiment']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Vectorize text data
-count_vect = CountVectorizer(stop_words='english')
+count_vect = CountVectorizer(lowercase=False, stop_words='english')
 X_train = count_vect.fit_transform(X_train)
 X_test = count_vect.transform(X_test)
 
