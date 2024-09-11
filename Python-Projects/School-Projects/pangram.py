@@ -4,4 +4,4 @@ def is_pangram(string):
     alphabet = set(ascii_lowercase)
     return set(string.lower()) >= alphabet
 
-print(is_pangram("The quiick brown fox jumps over the lazy dog"))
+print(is_pangram("The quick brown fox jumps over the lazy dog"))
