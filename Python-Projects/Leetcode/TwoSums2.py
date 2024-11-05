@@ -5,6 +5,7 @@ def TwoSum(numbers, target):
     l = 0
     r = n-1
 
+    # This goes through each element of the list from both sides and checks if they add to the target value
     while l < r:
         summ = numbers[l] + numbers[r]
         if summ == target:
@@ -13,4 +14,6 @@ def TwoSum(numbers, target):
             l += 1
         else:
             r -= 1
+
+            
 print(TwoSum(nums, 59))

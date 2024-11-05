@@ -2,6 +2,9 @@ def longestConsecutive(nums):
     s = set(nums)
     longest = 0
 
+
+    # This checks the numbers for a chain of consecutive numbers
+    # It checks if the numbers starts a sequence, and if it does it checks how long it goes
     for num in nums:
         if num - 1 not in s:
             next_num = num + 1
