@@ -1,4 +1,4 @@
-def isPalidrome(s):
+def isPalindrome(s):
     n = len(s)
     L = 0
     R = n - 1
@@ -27,4 +27,4 @@ def isPalidrome(s):
     return True
 
 
-print(isPalidrome("Was it a car or a cat I saw?"))
+print(isPalindrome("Was it a car or a cat I saw?"))
