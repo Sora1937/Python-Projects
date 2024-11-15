@@ -3,6 +3,8 @@ def compareTriplets(a, b):
     Bob = 0
     score = []
     
+    # This loop compares each number in the triplets and assigns points on which is higher
+    # Tie equals 0 points
     for num1, num2 in zip(a, b):
         if num1 > num2:
             Alice += 1
@@ -10,8 +12,11 @@ def compareTriplets(a, b):
             Bob += 1
         else:
             continue
+
+    # Recording the points
     score.append(Alice)
     score.append(Bob)
+
     return score
 
-print(compareTriplets([10, 5, 3], [2, 5, 4]))
+print(compareTriplets(input("Triple 1: "), input("Triple 2: ")))
